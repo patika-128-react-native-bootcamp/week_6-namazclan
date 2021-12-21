@@ -1658,3 +1658,188 @@
         "variants": []
     }
 ]
+
+{
+    "characters": {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/323/characters",
+        "items": [],
+        "returned": 0
+    },
+    "collectedIssues": [],
+    "collections": [],
+    "creators": {
+        "available": 2,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/323/creators",
+        "items": [
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "returned": 2
+    },
+    "dates": [
+        {
+            "date": "2029-12-31T00:00:00-0500",
+            "type": "onsaleDate"
+        },
+        {
+            "date": "-0001-11-30T00:00:00-0500",
+            "type": "focDate"
+        }
+    ],
+    "description": "",
+    "diamondCode": "",
+    "digitalId": 0,
+    "ean": "",
+    "events": {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/323/events",
+        "items": [],
+        "returned": 0
+    },
+    "format": "Comic",
+    "id": 323,
+    "images": [
+        {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc69f33cafc0"
+        },
+        {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/20/4bc69f33cafc0"
+        }
+    ],
+    "isbn": "",
+    "issn": "",
+    "issueNumber": 2,
+    "modified": "-0001-11-30T00:00:00-0500",
+    "pageCount": 0,
+    "prices": [
+        {
+            "price": 2.99,
+            "type": "printPrice"
+        }
+    ],
+    "resourceURI": "http://gateway.marvel.com/v1/public/comics/323",
+    "series": {
+        "name": "Ant-Man (2003 - 2004)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/551"
+    },
+    "stories": {
+        "available": 2,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/323/stories",
+        "items": [
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "returned": 2
+    },
+    "textObjects": [
+        {
+            "language": "en-us",
+            "text": "Ant-Man digs deeper to find out who is leaking secret information that threatens our national security.
+32 pgs./PARENTAL ADVISORY...$2.99", "type": "issue_solicit_text"}], "thumbnail": {"extension": "jpg", "path": "http: //i.annihil.us/u/prod/marvel/i/mg/f/20/4bc69f33cafc0"}, "title": "Ant-Man (2003) #2", "upc": "5960605396-01911", "urls": [{"type": "detail", "url": "http://marvel.com/comics/issue/323/ant-man_2003_2?utm_campaign=apiRef&utm_source=116e05dae479e84d8180e96ea73a793d"}], "variantDescription": "", "variants": []}
+
+
+
+{
+    "characters": {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/1003/characters",
+        "items": [],
+        "returned": 0
+    },
+    "collectedIssues": [],
+    "collections": [],
+    "creators": {
+        "available": 2,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/1003/creators",
+        "items": [
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "returned": 2
+    },
+    "dates": [
+        {
+            "date": "2029-12-31T00:00:00-0500",
+            "type": "onsaleDate"
+        },
+        {
+            "date": "-0001-11-30T00:00:00-0500",
+            "type": "focDate"
+        }
+    ],
+    "description": "",
+    "diamondCode": "",
+    "digitalId": 0,
+    "ean": "",
+    "events": {
+        "available": 0,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/1003/events",
+        "items": [],
+        "returned": 0
+    },
+    "format": "Trade Paperback",
+    "id": 1003,
+    "images": [
+        {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/c0/4bc66d78f1bee"
+        }
+    ],
+    "isbn": "0-7851-0799-1",
+    "issn": "",
+    "issueNumber": 0,
+    "modified": "-0001-11-30T00:00:00-0500",
+    "pageCount": 240,
+    "prices": [
+        {
+            "price": 9.99,
+            "type": "printPrice"
+        }
+    ],
+    "resourceURI": "http://gateway.marvel.com/v1/public/comics/1003",
+    "series": {
+        "name": "Sentry, the (1999)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/series/65"
+    },
+    "stories": {
+        "available": 2,
+        "collectionURI": "http://gateway.marvel.com/v1/public/comics/1003/stories",
+        "items": [
+            [Object
+            ],
+            [Object
+            ]
+        ],
+        "returned": 2
+    },
+    "textObjects": [
+        {
+            "language": "en-us",
+            "text": "On the edge of alcoholism and a failed marriage, Bob Reynolds wakes up to discover his true nature. A forgotten hero, he must unravel the conspiracy to erase his memory from mankind before an evil entity returns.",
+            "type": "issue_solicit_text"
+        }
+    ],
+    "thumbnail": {
+        "extension": "jpg",
+        "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/c0/4bc66d78f1bee"
+    },
+    "title": "Sentry, the (Trade Paperback)",
+    "upc": "",
+    "urls": [
+        {
+            "type": "detail",
+            "url": "http://marvel.com/comics/collection/1003/sentry_the_trade_paperback?utm_campaign=apiRef&utm_source=116e05dae479e84d8180e96ea73a793d"
+        }
+    ],
+    "variantDescription": "",
+    "variants": []
+}
