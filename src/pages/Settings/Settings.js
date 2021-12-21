@@ -1,10 +1,9 @@
 import React from 'react'
 import { View, Text } from 'react-native'
+import SettingsLayout from './Layout/'
 
 export default function Settings() {
     return (
-        <View>
-            <Text>Setting Alanı</Text>
-        </View>
+        <SettingsLayout/>
     )
 }

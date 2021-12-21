@@ -11,7 +11,7 @@ const Tab = createBottomTabNavigator();
 export default function Navigation() {
     return (
         <NavigationContainer>
-            <Tab.Navigator screenOptions={{headerShown: false}}>
+            <Tab.Navigator >
                 <Tab.Screen name="Book" component={BookStack} />
                 <Tab.Screen name="Search" component={Search} />
                 <Tab.Screen name="My Library" component={Library} />
