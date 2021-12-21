@@ -1,6 +1,6 @@
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import BookStack from './BookStack';
+import ComicStack from './ComicStack';
 import {NavigationContainer} from '@react-navigation/native';
 import Library from '../pages/Library';
 import Settings from '../pages/Settings';
@@ -12,7 +12,7 @@ export default function Navigation() {
     return (
         <NavigationContainer>
             <Tab.Navigator >
-                <Tab.Screen name="Book" component={BookStack} />
+                <Tab.Screen name="Comic" component={ComicStack} />
                 <Tab.Screen name="Search" component={Search} />
                 <Tab.Screen name="My Library" component={Library} />
                 <Tab.Screen name="Settings" component={Settings} />
