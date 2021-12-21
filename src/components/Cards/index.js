@@ -1,0 +1,2 @@
+
+export {ComicCard} from "./ComicCard";
