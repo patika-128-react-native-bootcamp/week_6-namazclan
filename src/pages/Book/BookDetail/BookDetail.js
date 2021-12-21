@@ -1,10 +1,8 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import BookDetailLayout from './Layout/'
 
 export default function BookDetail() {
     return (
-        <View>
-            <Text>Book Detail</Text>
-        </View>
+        <BookDetailLayout/>
     )
 }
