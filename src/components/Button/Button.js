@@ -7,6 +7,6 @@ export default function Button() {
         <TouchableOpacity>
             <Text>Add</Text>
         </TouchableOpacity>
-    </View>  
+        </View>  
     )
 }
