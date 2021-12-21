@@ -1,10 +1,10 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-export default function ComicCard({Comic}) {
+export default function ComicCard({comic}) {
     return (
         <View>
-            <Text>{Comic.title}</Text>
+            <Text>{comic.title}</Text>
         </View>
     )
 }
