@@ -1,11 +1,11 @@
 import React from 'react'
 import {SafeAreaView, View, Text } from 'react-native'
-import styles from './BookDetailLayout.styles';
+import styles from './ComicDetailLayout.styles';
 
-export default function BookDetailLayout() {
+export default function ComicDetailLayout() {
     return (
         <SafeAreaView>
-            <Text>Book Detail Layout</Text>
+            <Text>Comic Detail Layout</Text>
         </SafeAreaView>
     )
 }
