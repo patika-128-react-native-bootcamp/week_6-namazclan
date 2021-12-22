@@ -7,7 +7,6 @@ export default StyleSheet.create({
         paddingLeft:30,
         marginBottom: 25,
         marginTop: 10,
-        paddingRight: 30
     },
     image: {
         width: 150,
