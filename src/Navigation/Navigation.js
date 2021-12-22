@@ -33,8 +33,9 @@ export default function Navigation() {
             // You can return any component that you like here!
             return <Icon name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',
+          tabBarActiveTintColor: '#ef4322',
           tabBarInactiveTintColor: 'gray',
+          headerShown: false
         })} >
                 <Tab.Screen name="Home" component={ComicStack} />
                 <Tab.Screen name="Search" component={Search} />
