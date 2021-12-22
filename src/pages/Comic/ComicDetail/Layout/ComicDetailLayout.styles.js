@@ -18,12 +18,23 @@ export default StyleSheet.create({
         color: "white",
         alignSelf: "center",
         fontSize: 32,
-
         fontWeight: "bold",
     },
     titleContainer: {
         backgroundColor: "rgba(52, 52, 52, 0.8)",
         paddingVertical: 15,
         borderRadius: 25
-    }
+    },
+    descpription: {
+        //color: "white",
+        fontSize: 18,
+        padding: 5,
+        color: '#FFFFFF',
+    },
+    pageCount: {
+        color: "white",
+        fontSize: 18,
+        padding: 5
+    },
+  
 })
