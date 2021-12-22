@@ -6,7 +6,8 @@ export default StyleSheet.create({
         paddingRight:20,
         paddingLeft:30,
         marginBottom: 25,
-        marginTop: 10
+        marginTop: 10,
+        paddingRight: 30
     },
     image: {
         width: 150,
@@ -21,10 +22,6 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: "black",
         fontSize: 14,
-
-    },
-    titleContainer: {
-        flexWrap: "wrap",
 
     },
     read: {
