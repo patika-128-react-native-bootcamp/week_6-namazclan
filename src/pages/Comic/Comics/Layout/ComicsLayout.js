@@ -1,6 +1,7 @@
 import React from 'react'
 import { SafeAreaView, View, Text, FlatList } from 'react-native'
 import ComicCard from '../../../../components/Cards/ComicCard';
+import Header from '../../../../components/Cards/Header'
 import styles from './ComicsLayout.styles';
 
 export default function ComicsLayout({ data, onPress, navigation }) {
@@ -11,14 +12,16 @@ export default function ComicsLayout({ data, onPress, navigation }) {
     const renderItem = ({ item }) => <ComicCard comic={item} onPress={() => handleCardPress(item)} />
 
     return (
-        <SafeAreaView style={styles.container}>
-            <Text>Layout</Text>
+        <View style={styles.container}>
+            <Header />
             <FlatList
+
                 data={data}
                 renderItem={renderItem}
-                numColumns="2"
+                numColumns= "2"
             />
-        </SafeAreaView>
+
+        </View>
     )
 }
 
