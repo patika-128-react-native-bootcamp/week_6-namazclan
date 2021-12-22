@@ -12,7 +12,8 @@ const Tab = createBottomTabNavigator();
 export default function Navigation() {
     return (
         <NavigationContainer>
-            <Tab.Navigator screenOptions={({ route }) => ({
+              <Tab.Navigator
+        screenOptions={({ route }) => ({
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
@@ -35,8 +36,9 @@ export default function Navigation() {
           },
           tabBarActiveTintColor: '#ef4322',
           tabBarInactiveTintColor: 'gray',
-          headerShown: false
-        })} >
+        })}
+      >
+          
                 <Tab.Screen name="Home" component={ComicStack} />
                 <Tab.Screen name="Search" component={Search} />
                 <Tab.Screen name="My Library" component={Library} />
