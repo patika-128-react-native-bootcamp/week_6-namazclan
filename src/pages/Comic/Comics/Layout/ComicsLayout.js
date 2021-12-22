@@ -15,7 +15,7 @@ export default function ComicsLayout({ data, onPress, navigation }) {
         <View style={styles.container}>
             <Header />
             <FlatList
-
+                showsVerticalScrollIndicator={false}
                 data={data}
                 renderItem={renderItem}
                 numColumns= "2"
