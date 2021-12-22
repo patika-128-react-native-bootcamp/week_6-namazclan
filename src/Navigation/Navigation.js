@@ -35,7 +35,8 @@ export default function Navigation() {
             return <Icon name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: '#ef4322',
-          tabBarInactiveTintColor: 'gray',
+            tabBarInactiveTintColor: 'gray',
+            headerShown: false
         })}
       >
           
