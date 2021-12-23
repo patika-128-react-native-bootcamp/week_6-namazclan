@@ -11,7 +11,9 @@ export default StyleSheet.create({
     image: {
         width: 150,
         height: 250,
-        resizeMode: 'stretch'
+        resizeMode: 'stretch',
+        borderRadius: 20,
+
     },
     imageContainer: {
         marginBottom: 20,
@@ -31,9 +33,8 @@ export default StyleSheet.create({
     readContainer: {
         marginTop: 10
     },
-    author: {
-        fontSize: 12,
-        fontWeight: "bold",
-        color: '#ef4322',
+    bottomContainer: {
+        flex: 1
     }
+
 })
