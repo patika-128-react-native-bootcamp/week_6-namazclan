@@ -2204,4 +2204,667 @@
             "url": "http://marvel.com/comics/characters/1017100/a-bomb_has?utm_campaign=apiRef&utm_source=116e05dae479e84d8180e96ea73a793d"
         }
     ]
-}
+
+
+
+
+[
+    {
+        "comics": {
+            "available": 123,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009156/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 6,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009156/events",
+            "items": [Array
+            ],
+            "returned": 6
+        },
+        "id": 1009156,
+        "modified": "2014-05-28T12:41:41-0400",
+        "name": "Apocalypse",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009156",
+        "series": {
+            "available": 56,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009156/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 124,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009156/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/e0/526166076a1d0"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 63,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009197/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 3,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009197/events",
+            "items": [Array
+            ],
+            "returned": 3
+        },
+        "id": 1009197,
+        "modified": "2011-11-14T15:18:17-0500",
+        "name": "Blink",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009197",
+        "series": {
+            "available": 23,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009197/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 67,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009197/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/d0/4ce59eeb38a9a"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 695,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009243/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 27,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009243/events",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "id": 1009243,
+        "modified": "2016-02-11T10:06:50-0500",
+        "name": "Colossus",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009243",
+        "series": {
+            "available": 166,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009243/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 852,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009243/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/e0/51127cf4b996f"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 490,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009313/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 14,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009313/events",
+            "items": [Array
+            ],
+            "returned": 14
+        },
+        "id": 1009313,
+        "modified": "2016-03-14T12:47:45-0400",
+        "name": "Gambit",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009313",
+        "series": {
+            "available": 124,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009313/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 618,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009313/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/40/52696aa8aee99"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 31,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009349/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 2,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009349/events",
+            "items": [Array
+            ],
+            "returned": 2
+        },
+        "id": 1009349,
+        "modified": "1969-12-31T19:00:00-0500",
+        "name": "Holocaust (Age of Apocalypse)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009349",
+        "series": {
+            "available": 17,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009349/series",
+            "items": [Array
+            ],
+            "returned": 17
+        },
+        "stories": {
+            "available": 29,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009349/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 465,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009417/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 21,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009417/events",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "id": 1009417,
+        "modified": "2016-02-10T15:55:02-0500",
+        "name": "Magneto",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009417",
+        "series": {
+            "available": 168,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009417/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 502,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009417/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/b0/5261a7e53f827"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 107,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009447/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 6,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009447/events",
+            "items": [Array
+            ],
+            "returned": 6
+        },
+        "id": 1009447,
+        "modified": "2016-02-01T15:53:17-0500",
+        "name": "Mister Sinister",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009447",
+        "series": {
+            "available": 50,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009447/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 110,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009447/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/80/526034ac3c53a"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 626,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009546/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 25,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009546/events",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "id": 1009546,
+        "modified": "2016-02-01T14:50:44-0500",
+        "name": "Rogue",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009546",
+        "series": {
+            "available": 161,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009546/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 779,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009546/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/5112d84e2166c"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 21,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010969/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "",
+        "events": {
+            "available": 1,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010969/events",
+            "items": [Array
+            ],
+            "returned": 1
+        },
+        "id": 1010969,
+        "modified": "2013-10-24T13:25:35-0400",
+        "name": "Sabretooth (Age of Apocalypse)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010969",
+        "series": {
+            "available": 7,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010969/series",
+            "items": [Array
+            ],
+            "returned": 7
+        },
+        "stories": {
+            "available": 21,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010969/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/90/5269580126d71"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 10,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010975/comics",
+            "items": [Array
+            ],
+            "returned": 10
+        },
+        "description": "Katherine Pryde lived in the suburbs of Illinois and kept her mutant abilities a secret.",
+        "events": {
+            "available": 0,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010975/events",
+            "items": [Array
+            ],
+            "returned": 0
+        },
+        "id": 1010975,
+        "modified": "2014-04-29T14:11:09-0400",
+        "name": "Shadowcat (Age of Apocalypse)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010975",
+        "series": {
+            "available": 1,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010975/series",
+            "items": [Array
+            ],
+            "returned": 1
+        },
+        "stories": {
+            "available": 10,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010975/stories",
+            "items": [Array
+            ],
+            "returned": 10
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/f/80/535feaf1a92ef"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 13,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010976/comics",
+            "items": [Array
+            ],
+            "returned": 13
+        },
+        "description": "Silver Samurai was a mutant rebel in his homeland of Japan, where, alongside Sunfire, he stood as the last line of defense against the hordes of Apocalypse.",
+        "events": {
+            "available": 0,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010976/events",
+            "items": [Array
+            ],
+            "returned": 0
+        },
+        "id": 1010976,
+        "modified": "2014-04-29T15:00:49-0400",
+        "name": "Silver Samurai (Age of Apocalypse)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010976",
+        "series": {
+            "available": 2,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010976/series",
+            "items": [Array
+            ],
+            "returned": 2
+        },
+        "stories": {
+            "available": 13,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010976/stories",
+            "items": [Array
+            ],
+            "returned": 13
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/a/20/535ff6c2ee685"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 12,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010979/comics",
+            "items": [Array
+            ],
+            "returned": 12
+        },
+        "description": "Calling herself the Windrider, Storm carved out a small area of Africa as her own and intended to keep it safe from the strife of the war between humans and mutants.",
+        "events": {
+            "available": 1,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010979/events",
+            "items": [Array
+            ],
+            "returned": 1
+        },
+        "id": 1010979,
+        "modified": "2014-03-05T13:57:02-0500",
+        "name": "Storm (Age of Apocalypse)",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1010979",
+        "series": {
+            "available": 3,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010979/series",
+            "items": [Array
+            ],
+            "returned": 3
+        },
+        "stories": {
+            "available": 11,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1010979/stories",
+            "items": [Array
+            ],
+            "returned": 11
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/00/5317732bcc91a"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 84,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009636/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "Shiro Yoshida’s mother was exposed to the atomic devastation of Hiroshima during World War II and died giving birth to him.",
+        "events": {
+            "available": 6,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009636/events",
+            "items": [Array
+            ],
+            "returned": 6
+        },
+        "id": 1009636,
+        "modified": "2014-05-01T15:08:48-0400",
+        "name": "Sunfire",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009636",
+        "series": {
+            "available": 38,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009636/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 95,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009636/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/7/00/53629b9e24ef5"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    },
+    {
+        "comics": {
+            "available": 2522,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009718/comics",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "description": "Born with super-human senses and the power to heal from almost any wound, Wolverine was captured by a secret Canadian organization and given an unbreakable skeleton and claws. Treated like an animal, it took years for him to control himself. Now, he's a premiere member of both the X-Men and the Avengers.",
+        "events": {
+            "available": 42,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009718/events",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "id": 1009718,
+        "modified": "2016-05-02T12:21:44-0400",
+        "name": "Wolverine",
+        "resourceURI": "http://gateway.marvel.com/v1/public/characters/1009718",
+        "series": {
+            "available": 681,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009718/series",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "stories": {
+            "available": 3528,
+            "collectionURI": "http://gateway.marvel.com/v1/public/characters/1009718/stories",
+            "items": [Array
+            ],
+            "returned": 20
+        },
+        "thumbnail": {
+            "extension": "jpg",
+            "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf"
+        },
+        "urls": [
+            [Object
+            ],
+            [Object
+            ],
+            [Object
+            ]
+        ]
+    }
+]

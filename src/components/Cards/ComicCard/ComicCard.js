@@ -20,9 +20,8 @@ export default function ComicCard({ comic, onPress }) {
                         <Text style={styles.read}>READ NOW</Text>
                     </TouchableOpacity>
                     <View>
-                        <Text style={styles.title} numberOfLines={2}>{comic.title.slice(0, 20)}...</Text>
+                        <Text style={styles.title} numberOfLines={2}>{comic.title}</Text>
                     </View>
-
                 </View>
             </View>
         </TouchableWithoutFeedback>
