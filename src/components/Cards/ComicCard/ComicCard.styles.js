@@ -23,7 +23,6 @@ export default StyleSheet.create({
         fontWeight: "bold",
         color: "black",
         fontSize: 14,
-
     },
     read: {
         color: "red",
@@ -34,7 +33,8 @@ export default StyleSheet.create({
         marginTop: 10
     },
     bottomContainer: {
-        flex: 1
+        width: 150,
+        height: 60,
     }
 
 })
