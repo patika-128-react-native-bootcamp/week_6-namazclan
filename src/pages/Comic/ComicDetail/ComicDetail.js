@@ -5,11 +5,19 @@ import useFetch from '../../../hooks/useFetch';
 export default function ComicDetail({ route, navigation }) {
     
     const { loading, data, error } = useFetch(`${baseUrl}/comics/${route.params.id}/characters?&ts=${ts}&apikey=${apikey}&hash=${hash}`);
+
+    
+
     const response = data ? data.data : null
+
+    const responseData=response && response.results 
+    
+    console.log(responseData);
+    
     const handleBack = () => {
         navigation.goBack();
     }
     return (
-        <ComicDetailLayout details={route.params} onPress={handleBack} data={response} />
+        <ComicDetailLayout details={route.params} onPress={handleBack} data={response} charactersData={responseData} />
     )
 }

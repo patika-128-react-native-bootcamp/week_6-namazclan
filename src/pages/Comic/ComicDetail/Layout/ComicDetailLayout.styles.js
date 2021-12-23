@@ -36,5 +36,10 @@ export default StyleSheet.create({
         fontSize: 18,
         padding: 5
     },
+    charactersName:{
+        fontSize: 18,
+        padding: 5,
+        color: '#FFFFFF',
+    }
   
 })
