@@ -1,12 +1,18 @@
 import React from 'react'
-import { SafeAreaView, View, Text, ImageBackground } from 'react-native'
+import { SafeAreaView, View, Text, ImageBackground, FlatList } from 'react-native'
 import styles from './ComicDetailLayout.styles';
 import { emptyText } from '../../../../Utils/constants';
 
-export default function ComicDetailLayout({ details, onPress, data }) {
+export default function ComicDetailLayout({ details, onPress, data,charactersData }) {
     const source = details.images[0] !== undefined ? `${details.images[0].path}.jpg` : "https://legacycomics.com/wp-content/uploads/2019/07/marvel-comics-1000-allred-60s.png"
+    
     const detail = details.textObjects[0] == undefined ? emptyText : details.textObjects[0].text
     const pageCount = details.pageCount == 0 ? "unknown" : details.pageCount
+    
+
+    const renderItem = ({ item }) => <Text style={styles.charactersName}>{item.name}</Text>
+
+    
     return (
         <SafeAreaView style={styles.container}>
             <ImageBackground source={{ uri: source }} resizeMode="cover" style={styles.image}>
@@ -16,8 +22,14 @@ export default function ComicDetailLayout({ details, onPress, data }) {
                     </View>
                     <Text style={styles.descpription}>{detail.split("<br>", 1)}</Text>
                     <Text style={styles.pageCount}>Page Count: {pageCount}</Text>
-
+                    
+                    <FlatList
+                        data={details.characters.items}
+                        renderItem={renderItem}
+                    />
+                    
                 </View>
+                
             </ImageBackground>
         </SafeAreaView>
     )
