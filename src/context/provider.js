@@ -6,14 +6,14 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const userProvider = ({ children }) => {
     const [language, setLanguage] = React.useState("en");
-    const [theme, setTheme] = React.useState("light");
+    const [theme, setTheme] = React.useState("dark");
 
     useEffect(() => {
         AsyncStorage.getItem("@LANGUAGE").then(l => {
             l && setLanguage(JSON.parse(l))
         })
         AsyncStorage.getItem("@THEME").then(t => {
-            t && setLanguage(JSON.parse(t))
+            t && setTheme(JSON.parse(t))
         })
     },[])
 

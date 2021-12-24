@@ -1,10 +1,11 @@
-import { StyleSheet } from "react-native";
 
-export default StyleSheet.create({
+import { StyleSheet } from "react-native";
+import { colors } from "../../../configs"
+const base_style = StyleSheet.create({
     container: {
         alignSelf: "center",
-        paddingRight:20,
-        paddingLeft:30,
+        paddingRight: 20,
+        paddingLeft: 30,
         marginBottom: 25,
         marginTop: 10,
     },
@@ -22,7 +23,7 @@ export default StyleSheet.create({
     title: {
         fontWeight: "bold",
         color: "black",
-        fontSize: 14,
+        fontSize: 16,
     },
     read: {
         color: "red",
@@ -36,5 +37,18 @@ export default StyleSheet.create({
         width: 150,
         height: 60,
     }
-
 })
+export default {
+    dark: StyleSheet.create({
+        ...base_style,
+        container: {
+            ...base_style.container,
+        },
+    }),
+    light: StyleSheet.create({
+        ...base_style,
+        container: {
+            ...base_style.container,
+        },
+    })
+}

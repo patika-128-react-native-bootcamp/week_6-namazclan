@@ -7,7 +7,7 @@ import Settings from '../pages/Settings';
 import HeroStack from '../Navigation/HeroStack';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector } from "react-redux"
-
+import {colors} from "../configs"
 const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
@@ -23,8 +23,8 @@ export default function Navigation() {
       <Tab.Navigator
         tabBarOptions={{
 
-          activeBackgroundColor: theme == "dark" ? 'black' : "white",
-          inactiveBackgroundColor: theme == "dark" ? 'black' : "white",
+          activeBackgroundColor: theme == "dark" ? colors.MainBlack : colors.MainWhite,
+          inactiveBackgroundColor: theme == "dark" ? colors.MainBlack : colors.MainWhite,
 
         }}
         screenOptions={({ route }) => ({

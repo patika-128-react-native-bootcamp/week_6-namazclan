@@ -2,9 +2,11 @@ import React from 'react'
 import { View, Text } from 'react-native'
 import HeroesLayout from './Layout'
 import useFetch from '../../../hooks/useFetch';
-import { baseUrl, hash, apikey, ts } from "../../../Utils/constants"
+import { constants } from "../../../configs"
+import { useSelector } from 'react-redux';
+
 export default function Heroes({navigation}) {
-    const { loading, data, error } = useFetch(`${baseUrl}/characters?limit=20&ts=${ts}&apikey=${apikey}&hash=${hash}`);
+    const { loading, data, error } = useFetch(`${constants.baseUrl}/characters?limit=20&ts=${constants.ts}&apikey=${constants.apikey}&hash=${constants.hash}`);
     // const [comicData, setComicData] = useState(null)
     // useEffect(() => {
     //     if (data !== null) {
@@ -12,7 +14,7 @@ export default function Heroes({navigation}) {
     //     }
     // }, [data]);
 
-
+    const theme = useSelector(s => s.theme);
     if (loading) {
         return (
             <View>
@@ -29,6 +31,6 @@ export default function Heroes({navigation}) {
         )
     }
     return (
-        <HeroesLayout data={data.data.results} navigation={navigation} />
+        <HeroesLayout data={data.data.results} navigation={navigation} theme={theme} />
     )
 }
