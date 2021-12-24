@@ -1,19 +1,19 @@
 import React,{useState, useEffect} from 'react'
 import { View, Text } from 'react-native'
 import ComicsLayout from './Layout';
-import { baseUrl, hash, apikey, ts } from "../../../Utils/constants";
+import { constants } from "../../../configs"
 import useFetch from '../../../hooks/useFetch/useFetch';
-
+import { useSelector } from "react-redux"
 
 export default function Comics({navigation}) {
-    const { loading, data, error } = useFetch(`${baseUrl}/comics?limit=20&ts=${ts}&apikey=${apikey}&hash=${hash}`);
+    const { loading, data, error } = useFetch(`${constants.baseUrl}/comics?limit=20&ts=${constants.ts}&apikey=${constants.apikey}&hash=${constants.hash}`);
     // const [comicData, setComicData] = useState(null)
     // useEffect(() => {
     //     if (data !== null) {
     //         setComicData(data.data.results);
     //     }
     // }, [data]);
-
+    const theme = useSelector(s => s.theme)
     
     if (loading) {
         return (
@@ -31,6 +31,6 @@ export default function Comics({navigation}) {
         )
     }
     return (
-        <ComicsLayout data={data.data.results} navigation={navigation} />
+        <ComicsLayout data={data.data.results} navigation={navigation} theme={theme} />
     )
 }

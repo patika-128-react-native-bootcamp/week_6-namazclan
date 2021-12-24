@@ -3,24 +3,24 @@ import { View, Text, Image, TouchableWithoutFeedback, TouchableOpacity } from 'r
 import styles from './ComicCard.styles'
 import { Shadow } from 'react-native-shadow-2';
 
-export default function ComicCard({ comic, onPress }) {
+export default function ComicCard({ comic, onPress, theme }) {
 
     const source = comic.images[0] !== undefined ? `${comic.images[0].path}.jpg` : "https://legacycomics.com/wp-content/uploads/2019/07/marvel-comics-1000-allred-60s.png"
     return (
         <TouchableWithoutFeedback >
-            <View style={styles.container}>
+            <View style={styles[theme].container}>
                 <Shadow >
                     <Image
-                        style={styles.image}
+                        style={styles[theme].image}
                         source={{ uri: source }}
                     />
                 </Shadow>
-                <View style={styles.bottomContainer}>
-                    <TouchableOpacity style={styles.readContainer} onPress={onPress}>
-                        <Text style={styles.read}>READ NOW</Text>
+                <View style={styles[theme].bottomContainer}>
+                    <TouchableOpacity style={styles[theme].readContainer} onPress={onPress}>
+                        <Text style={styles[theme].read}>READ NOW</Text>
                     </TouchableOpacity>
                     <View>
-                        <Text style={styles.title} numberOfLines={2}>{comic.title}</Text>
+                        <Text style={styles[theme].title} numberOfLines={2}>{comic.title}</Text>
                     </View>
                 </View>
             </View>

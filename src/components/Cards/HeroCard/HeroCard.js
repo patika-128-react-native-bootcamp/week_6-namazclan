@@ -2,33 +2,35 @@ import React from 'react'
 import { View, Text, Image, TouchableOpacity } from 'react-native'
 import styles from './HeroCard.style'
 import { Shadow } from 'react-native-shadow-2';
-import { emptyText } from '../../../Utils/constants';
+import { constants } from "../../../configs" 
+import {useSelector} from "react-redux"
 export default function HeroCard({ hero, onPress }) {
+    const theme = useSelector(s => s.theme);
     const source = hero.thumbnail !== undefined ? `${hero.thumbnail.path}/portrait_incredible.jpg` : "https://legacycomics.com/wp-content/uploads/2019/07/marvel-comics-1000-allred-60s.png"
     return (
         <Shadow viewStyle={{ width: '100%', flex: 1 }} containerViewStyle={{ margin: 20 }}  >
-            <View style={styles.container}>
+            <View style={styles[theme].container}>
                 <Image
-                    style={styles.image}
+                    style={styles[theme].image}
                     source={{ uri: source }}
                     resizeMode="cover"
                 />
-                <View style={styles.rightContainer}>
+                <View style={styles[theme].rightContainer}>
                     <View>
-                        <Text style={styles.title}>
+                        <Text style={styles[theme].title}>
                             {hero.name}
                         </Text>
-                        <Text style={styles.numbers}>
+                        <Text style={styles[theme].numbers}>
                             Comics: {hero.comics.items.length} | Stories: {hero.stories.items.length}
                         </Text>
                     </View>
                     <View>
-                        <Text style={styles.description} numberOfLines={3}>
-                            {hero.description ? hero.description : emptyText}
+                        <Text style={styles[theme].description} numberOfLines={3}>
+                            {hero.description ? hero.description : constants.emptyText}
                         </Text>
                     </View>
-                    <TouchableOpacity style={styles.button} onPress={onPress} >
-                        <Text style={styles.read}>READ MORE</Text>
+                    <TouchableOpacity style={styles[theme].button} onPress={onPress} >
+                        <Text style={styles[theme].read}>READ MORE</Text>
                     </TouchableOpacity>
 
                 </View>
