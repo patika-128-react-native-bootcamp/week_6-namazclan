@@ -41,6 +41,22 @@ const base_style = StyleSheet.create({
 export default {
     light: StyleSheet.create({
         ...base_style,
+        container: {
+            ...base_style.container,
+            backgroundColor: colors.MainWhite,
+        },
+        title: {
+            ...base_style.title,
+            color: colors.MainBlack
+        },
+        numbers: {
+            ...base_style.numbers,
+            color: colors.MainBlack
+        },
+        description: {
+            ...base_style.description,
+            color: colors.MainBlack
+        },
     }),
     dark: StyleSheet.create({
         ...base_style,
