@@ -15,7 +15,7 @@ const userProvider = ({ children }) => {
         AsyncStorage.getItem("@THEME").then(t => {
             t && setTheme(JSON.parse(t))
         })
-    },[])
+    }, []);
 
 
     const stores = createStore(reducer, {language, theme})
