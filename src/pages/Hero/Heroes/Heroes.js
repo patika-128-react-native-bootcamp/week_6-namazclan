@@ -13,6 +13,19 @@ export default function Heroes({navigation}) {
     //         setComicData(data.data.results);
     //     }
     // }, [data]);
+    const [filteredList, setFilteredList] = React.useState([]);
+    React.useEffect(() => {
+        {data && setFilteredList(data.data.results)}
+    },[data])
+    
+    const handleSearch = text => {
+        const filtered = data.data.results.filter(product => {
+            const searchedText = text.toLowerCase();
+            const currentTitle = product.name.toLowerCase();
+            return currentTitle.indexOf(searchedText) > -1;
+        });
+        setFilteredList(filtered);
+    };
 
     const theme = useSelector(s => s.theme);
     if (loading) {
@@ -31,6 +44,6 @@ export default function Heroes({navigation}) {
         )
     }
     return (
-        <HeroesLayout data={data.data.results} navigation={navigation} theme={theme} />
+        <HeroesLayout data={filteredList} navigation={navigation} theme={theme} handleSearch={handleSearch}/>
     )
 }
