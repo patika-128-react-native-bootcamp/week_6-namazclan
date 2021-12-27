@@ -70,11 +70,11 @@ export default {
         },
         numbers: {
             ...base_style.numbers,
-            color: colors.MainBlack
+            color: 'white'
         },
         description: {
             ...base_style.description,
-            color: colors.MainBlack
+            color: 'white'
         },
 
     })
