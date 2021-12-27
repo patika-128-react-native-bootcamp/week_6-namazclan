@@ -30,7 +30,12 @@ const base_style = StyleSheet.create({
         fontWeight: "bold",
     },
     readContainer: {
-        marginTop: 10
+        marginTop: 10,
+    },
+    favContainer:{
+        position:'absolute',
+        top:5,
+        right:22,
     },
     bottomContainer: {
         width: 150,

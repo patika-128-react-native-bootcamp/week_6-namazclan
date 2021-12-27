@@ -2,8 +2,8 @@ import React from 'react'
 import { View, Text, Image, TouchableWithoutFeedback, TouchableOpacity } from 'react-native'
 import styles from './ComicCard.styles'
 import { Shadow } from 'react-native-shadow-2';
-
-export default function ComicCard({ comic, onPress, theme }) {
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+export default function ComicCard({ comic, onPress, theme ,onFavPress}) {
 
     const source = comic.images[0] !== undefined ? `${comic.images[0].path}.jpg` : "https://legacycomics.com/wp-content/uploads/2019/07/marvel-comics-1000-allred-60s.png"
     return (
@@ -13,8 +13,13 @@ export default function ComicCard({ comic, onPress, theme }) {
                     <Image
                         style={styles[theme].image}
                         source={{ uri: source }}
+                        
                     />
                 </Shadow>
+                <View style={styles[theme].favContainer}>
+                <Icon name="star" size={35} color="gray" onPress={onFavPress}/>
+                </View>
+                
                 <View style={styles[theme].bottomContainer}>
                     <TouchableOpacity style={styles[theme].readContainer} onPress={onPress}>
                         <Text style={styles[theme].read}>READ NOW</Text>

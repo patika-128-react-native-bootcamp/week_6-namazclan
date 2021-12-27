@@ -19,7 +19,6 @@ export default function Comics({navigation}) {
         {data && setFilteredList(data.data.results)}
     },[data])
     
-    
 
     const handleSearch = text => {
         const filtered = data.data.results.filter(product => {
@@ -28,6 +27,10 @@ export default function Comics({navigation}) {
             return currentTitle.indexOf(searchedText) > -1;
         });
         setFilteredList(filtered);
+    };
+
+    const onFavPress = () => {
+        console.log("deneme")
     };
     
     if (loading) {
@@ -46,6 +49,6 @@ export default function Comics({navigation}) {
         )
     }
     return (
-        <ComicsLayout data={filteredList} navigation={navigation} theme={theme} handleSearch={handleSearch}/>
+        <ComicsLayout data={filteredList} navigation={navigation} theme={theme} handleSearch={handleSearch} onFavPress={onFavPress}/>
     )
 }

@@ -5,13 +5,13 @@ import Header from '../../../../components/Cards/Header'
 import styles from './ComicsLayout.styles';
 import Search from "../../../../components/Search"
 
-export default function ComicsLayout({ data, onPress, navigation , theme,handleSearch}) {
+export default function ComicsLayout({ data, onPress, navigation , theme,handleSearch,onFavPress}) {
 
     
     const handleCardPress = (item) => {
         navigation.navigate("ComicDetailPage", item)
     }
-    const renderItem = ({ item }) => <ComicCard comic={item} onPress={() => handleCardPress(item)} theme={theme} />
+    const renderItem = ({ item }) => <ComicCard comic={item} onPress={() => handleCardPress(item)} theme={theme} onFavPress={onFavPress} />
 
     return (
         <View style={styles[theme].container}>
