@@ -22,7 +22,6 @@ const base_style = StyleSheet.create({
     },
     title: {
         fontWeight: "bold",
-        color: "black",
         fontSize: 16,
     },
     read: {
@@ -44,11 +43,19 @@ export default {
         container: {
             ...base_style.container,
         },
+        title: {
+            ...base_style.title,
+            color: "white",
+        },
     }),
     light: StyleSheet.create({
         ...base_style,
         container: {
             ...base_style.container,
+        },
+        title: {
+            ...base_style.title,
+            color: "black",
         },
     })
 }
