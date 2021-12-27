@@ -18,6 +18,7 @@ export default function Heroes({navigation}) {
         {data && setFilteredList(data.data.results)}
     },[data])
     
+    
     const handleSearch = text => {
         const filtered = data.data.results.filter(product => {
             const searchedText = text.toLowerCase();

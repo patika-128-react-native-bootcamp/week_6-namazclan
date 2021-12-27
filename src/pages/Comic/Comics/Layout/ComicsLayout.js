@@ -3,8 +3,9 @@ import { SafeAreaView, View, Text, FlatList } from 'react-native'
 import ComicCard from '../../../../components/Cards/ComicCard';
 import Header from '../../../../components/Cards/Header'
 import styles from './ComicsLayout.styles';
+import Search from "../../../../components/Search"
 
-export default function ComicsLayout({ data, onPress, navigation , theme}) {
+export default function ComicsLayout({ data, onPress, navigation , theme,handleSearch}) {
 
     
     const handleCardPress = (item) => {
@@ -14,7 +15,9 @@ export default function ComicsLayout({ data, onPress, navigation , theme}) {
 
     return (
         <View style={styles[theme].container}>
+           
             <Header theme={theme} />
+            <Search theme={theme} onChangeText={handleSearch}  placeholder= "Search..." />
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={data}

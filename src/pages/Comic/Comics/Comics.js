@@ -14,6 +14,21 @@ export default function Comics({navigation}) {
     //     }
     // }, [data]);
     const theme = useSelector(s => s.theme)
+    const [filteredList, setFilteredList] = React.useState([]);
+    React.useEffect(() => {
+        {data && setFilteredList(data.data.results)}
+    },[data])
+    
+    
+
+    const handleSearch = text => {
+        const filtered = data.data.results.filter(product => {
+            const searchedText = text.toLowerCase();
+            const currentTitle = product.title.toLowerCase();
+            return currentTitle.indexOf(searchedText) > -1;
+        });
+        setFilteredList(filtered);
+    };
     
     if (loading) {
         return (
@@ -31,6 +46,6 @@ export default function Comics({navigation}) {
         )
     }
     return (
-        <ComicsLayout data={data.data.results} navigation={navigation} theme={theme} />
+        <ComicsLayout data={filteredList} navigation={navigation} theme={theme} handleSearch={handleSearch}/>
     )
 }
