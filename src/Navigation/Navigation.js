@@ -2,12 +2,12 @@ import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import ComicStack from './ComicStack';
 import { NavigationContainer } from '@react-navigation/native';
-import Library from '../pages/Library';
 import Settings from '../pages/Settings';
 import HeroStack from '../Navigation/HeroStack';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector } from "react-redux"
 import {colors} from "../configs"
+import LibraryTopTab from './LibraryTopTab/LibraryTopTab';
 const Tab = createBottomTabNavigator();
 
 export default function Navigation() {
@@ -58,7 +58,7 @@ export default function Navigation() {
 
         <Tab.Screen name={comicName} component={ComicStack} />
         <Tab.Screen name={heroName} component={HeroStack} />
-        <Tab.Screen name={favoriteName} component={Library} />
+        <Tab.Screen name={favoriteName} component={LibraryTopTab} />
         <Tab.Screen name={settingsName} component={Settings} />
       </Tab.Navigator>
     </NavigationContainer>
