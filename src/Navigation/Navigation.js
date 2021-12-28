@@ -7,17 +7,21 @@ import HeroStack from '../Navigation/HeroStack';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import { useSelector } from "react-redux"
 import {colors} from "../configs"
-import LibraryTopTab from './LibraryTopTab/LibraryTopTab';
+import LibraryTopTab from './LibraryTopTab'
+import {useTranslation} from 'react-i18next';
+
+
+
 const Tab = createBottomTabNavigator();
 
-export default function Navigation() {
+function Navigation() {
+
+  const {t, i18n} = useTranslation();
   const language = useSelector(s => s.language);
   const theme = useSelector(s => s.theme);
 
-  const comicName = language == "tr" ? "ÇizgiRoman" : "Comics"
-  const heroName = language == "tr" ? "Kahramanlar" : "Heroes"
-  const favoriteName = language == "tr" ? "Kitaplığım" : "My Library"
-  const settingsName = language == "tr" ? "Ayarlar" : "Settings"
+  
+ 
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -33,17 +37,17 @@ export default function Navigation() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === comicName) {
+            if (route.name === t("comicName")) {
               iconName = focused
                 ? 'skull'
                 : 'skull';
-            } else if (route.name === heroName) {
+            } else if (route.name === t("heroName")) {
               iconName = focused ? 'book-open-page-variant' : 'book-open-page-variant';
             }
-            else if (route.name === favoriteName) {
+            else if (route.name === t("favoriteName")) {
               iconName = focused ? 'heart-flash' : 'heart-flash';
             }
-            else if (route.name === settingsName) {
+            else if (route.name === t("settingsName")) {
               iconName = focused ? 'cog' : 'cog';
             }
 
@@ -56,11 +60,14 @@ export default function Navigation() {
         })}
       >
 
-        <Tab.Screen name={comicName} component={ComicStack} />
-        <Tab.Screen name={heroName} component={HeroStack} />
-        <Tab.Screen name={favoriteName} component={LibraryTopTab} />
-        <Tab.Screen name={settingsName} component={Settings} />
+        <Tab.Screen name={t("comicName")} component={ComicStack} />
+        <Tab.Screen name={t("heroName")} component={HeroStack} />
+        <Tab.Screen name={t("favoriteName")} component={LibraryTopTab} />
+        <Tab.Screen name={t("settingsName")} component={Settings} />
       </Tab.Navigator>
     </NavigationContainer>
   )
 }
+
+export default (Navigation);
+
