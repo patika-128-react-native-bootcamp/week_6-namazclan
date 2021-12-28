@@ -1,0 +1,13 @@
+{
+    "translation":{
+
+        "comicName": "Comics",
+        "text":"hello",
+        "heroName": "Heros",
+        "favoriteName":"My Library",
+        "settingsName":"Settings",
+        "READNOW":"READ NOW",
+        "Search":"Search..."
+
+    }
+}
