@@ -7,7 +7,14 @@
         "favoriteName":"Kitaplığım",
         "settingsName":"Ayarlar",
         "READNOW":"DEVAMINI OKU",
-        "Search":"Arama..."
+        "Search":"Arama...",
+        "Light_Mode":"Açık Tema",
+        "Dark_Mode":"Koyu Tema",
+        "tr":"Türkçe",
+        "en":"İngilizce",
+        "READMORE":"DEVAMINI OKU",
+        "Comics":"Çizgi Romanlar",
+        "Stories":"Hikayeler"
     }
     
 }

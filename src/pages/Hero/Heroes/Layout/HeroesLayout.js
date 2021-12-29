@@ -22,7 +22,6 @@ export default function HeroesLayout({ data, navigation, theme, handleSearch }) 
                 data={data}
                 renderItem={renderItem}
             />
-
         </View>
     )
 }

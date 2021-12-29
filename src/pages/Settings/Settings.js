@@ -12,25 +12,21 @@ export default function Settings() {
   const {t, i18n} = useTranslation();
   
 
-  function handleLanguage(text) {
-    dispatch({type: 'SET_LANGUAGE', payload: {language: text}});
+  function handleLanguage(language) {
+    dispatch({type: 'SET_LANGUAGE', payload: {language: language}});
+    i18n.changeLanguage(language)
   }
   function handleTheme(text) {
     dispatch({type: 'SET_THEME', payload: {theme: text}});
   }
-
- 
-
   return (
-    <View>
-      <Text>{t("text")}</Text>
+ 
       <SettingsLayout
         setLanguage={handleLanguage}
         setTheme={handleTheme}
         theme={theme}
         language={language}
-        onChangeLanguage={(language) => i18n.changeLanguage(language)}
       />
-    </View>
+ 
   );
 }
