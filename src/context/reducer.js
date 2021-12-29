@@ -8,6 +8,18 @@ export default function (state, action) {
         case 'SET_THEME':
             AsyncStorage.setItem("@THEME", JSON.stringify(action.payload.theme))
             return { ...state, theme: action.payload.theme }
+        case 'ADD_FAVORITE_COMIC':
+            AsyncStorage.setItem("@COMIC", JSON.stringify(action.payload.comic))
+            return { ...state, comic: action.payload.comic }
+        case 'ADD_FAVORITE_HERO':
+            AsyncStorage.setItem("@HERO", JSON.stringify(action.payload.hero))
+            return { ...state, hero: action.payload.hero }
+        case 'DEL_FAVORITE_COMIC':
+            AsyncStorage.setItem("@COMIC", JSON.stringify(action.payload.comic))
+            return { ...state, comic: action.payload.comic }
+        case 'DEL_FAVORITE_HERO':
+            AsyncStorage.setItem("@HERO", JSON.stringify(action.payload.hero))
+            return { ...state, hero: action.payload.hero }
         
         default:
             return state;

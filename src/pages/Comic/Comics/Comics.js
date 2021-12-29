@@ -3,16 +3,15 @@ import { View, Text } from 'react-native'
 import ComicsLayout from './Layout';
 import { constants } from "../../../configs"
 import useFetch from '../../../hooks/useFetch/useFetch';
-import { useSelector } from "react-redux"
+import { useSelector,useDispatch } from "react-redux"
 
 export default function Comics({navigation}) {
     const { loading, data, error } = useFetch(`${constants.baseUrl}/comics?limit=20&ts=${constants.ts}&apikey=${constants.apikey}&hash=${constants.hash}`);
-    // const [comicData, setComicData] = useState(null)
-    // useEffect(() => {
-    //     if (data !== null) {
-    //         setComicData(data.data.results);
-    //     }
-    // }, [data]);
+    
+    const dispatch = useDispatch();
+    const favoriteComics = useSelector(s => s.comic);
+    
+
     const theme = useSelector(s => s.theme)
     const [filteredList, setFilteredList] = React.useState([]);
     React.useEffect(() => {
@@ -29,10 +28,29 @@ export default function Comics({navigation}) {
         setFilteredList(filtered);
     };
 
-    const onFavPress = () => {
-        console.log("deneme")
+    const onFavPress = (comic) => {
+        if(favoriteComics.includes(comic))
+            {
+                const removed=removeItemOnce(favoriteComics,comic)
+                console.log(removed)
+                dispatch({type: 'DEL_FAVORITE_COMIC', payload: {comic: [...removed]}});
+            }
+         else{
+
+             dispatch({type: 'ADD_FAVORITE_COMIC', payload: {comic: [...favoriteComics,comic]}});
+         }   
+
     };
-    
+
+    function removeItemOnce(arr, value) {
+        var index = arr.indexOf(value);
+        if (index > -1) {
+          arr.splice(index, 1);
+        }
+        return arr;
+      }
+
+   
     if (loading) {
         return (
             <View>
@@ -49,6 +67,6 @@ export default function Comics({navigation}) {
         )
     }
     return (
-        <ComicsLayout data={filteredList} navigation={navigation} theme={theme} handleSearch={handleSearch} onFavPress={onFavPress}/>
+        <ComicsLayout data={filteredList} navigation={navigation} theme={theme} handleSearch={handleSearch} onFavPress={onFavPress} favoriteComics={favoriteComics}/>
     )
 }
