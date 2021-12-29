@@ -16,7 +16,6 @@ export default function ComicCard({ comic, onPress, theme ,onFavPress}) {
                     <Image
                         style={styles[theme].image}
                         source={{ uri: source }}
-                        
                     />
                 </Shadow>
                 <View style={styles[theme].favContainer}>

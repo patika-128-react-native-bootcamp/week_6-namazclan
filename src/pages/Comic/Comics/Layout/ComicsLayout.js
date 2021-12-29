@@ -25,7 +25,6 @@ export default function ComicsLayout({ data, onPress, navigation , theme,handleS
                 renderItem={renderItem}
                 numColumns= "2"
             />
-
         </View>
     )
 }
