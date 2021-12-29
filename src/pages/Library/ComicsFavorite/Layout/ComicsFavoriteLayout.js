@@ -2,11 +2,11 @@ import React from 'react'
 import { SafeAreaView, View, Text, FlatList } from 'react-native'
 import ComicCard from '../../../../components/Cards/ComicCard';
 import Header from '../../../../components/Cards/Header'
-import styles from './ComicsLayout.styles';
+import styles from './ComicsFavoriteLayout.styles';
 import Search from "../../../../components/Search"
 import {useTranslation} from 'react-i18next';
 
-export default function ComicsLayout({ data, onPress, navigation , theme,handleSearch,onFavPress,favoriteComics}) {
+export default function ComicsFavoriteLayout({ data, onPress, navigation , theme,onFavPress,favoriteComics}) {
 
     const {t, i18n} = useTranslation();
     const handleCardPress = (item) => {
@@ -14,11 +14,11 @@ export default function ComicsLayout({ data, onPress, navigation , theme,handleS
     }
     const renderItem = ({ item }) => <ComicCard comic={item} onPress={() => handleCardPress(item)} theme={theme} onFavPress={onFavPress} favoriteComics={favoriteComics} />
 
+
+
     return (
         <View style={styles[theme].container}>
            
-            <Header theme={theme} />
-            <Search theme={theme} onChangeText={handleSearch}  placeholder= {t("Search")} />
             <FlatList
                 showsVerticalScrollIndicator={false}
                 data={data}
