@@ -17,6 +17,11 @@ const base_style = StyleSheet.create({
     padding: 10,
     flex: 1,
   },
+  favContainer:{
+    position: 'absolute',
+    top: -5,
+    right: 0,
+  },
   title: {
     fontSize: 18,
     fontWeight: 'bold',

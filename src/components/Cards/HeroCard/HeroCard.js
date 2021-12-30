@@ -5,16 +5,19 @@ import {Shadow} from 'react-native-shadow-2';
 import {constants} from '../../../configs';
 import {useSelector} from 'react-redux';
 import {useTranslation} from 'react-i18next';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
-export default function HeroCard({hero, onPress}) {
+export default function HeroCard({hero, onPress,onFavPress,favoriteHeroes}) {
   const theme = useSelector(s => s.theme);
   const source =
     hero.thumbnail.path ==
     'http://i.annihil.us/u/prod/marvel/i/mg/5/e0/4c0035c9c425d'
       ? 'https://upload.wikimedia.org/wikipedia/en/thumb/a/ad/Marvel_Heroes_Key_Art.jpg/220px-Marvel_Heroes_Key_Art'
       : hero.thumbnail.path;
-  const {t} = useTranslation();
 
+  const {t} = useTranslation();
+  const color = favoriteHeroes?.includes(hero.id) ? 'yellow' : 'gray';
+  
   return (
     <Shadow
       viewStyle={{width: '100%', flex: 1}}
@@ -28,6 +31,14 @@ export default function HeroCard({hero, onPress}) {
         <View style={styles[theme].rightContainer}>
           <View>
             <Text style={styles[theme].title}>{hero.name}</Text>
+            <View style={styles[theme].favContainer}>
+              <Icon
+            name="star"
+            size={35}
+            color={color}
+            onPress={() => onFavPress(hero.id)}
+              />
+        </View>
             <Text style={styles[theme].numbers}>
               {t('Comics')}: {hero.comics.items.length} | {t('Stories')}:{' '}
               {hero.stories.items.length}

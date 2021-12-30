@@ -33,7 +33,6 @@ export default function Comics({navigation}) {
   const onFavPress = comic => {
     if (favoriteComics.includes(comic)) {
       const removed = removeItemOnce(favoriteComics, comic);
-      console.log(removed);
       dispatch({type: 'DEL_FAVORITE_COMIC', payload: {comic: [...removed]}});
     } else {
       dispatch({
