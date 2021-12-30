@@ -3,7 +3,8 @@
 
 # NamazClan & Marvel React Native App
 
-<img src="https://github.com/patika-128-react-native-bootcamp/week_6-namazclan/blob/master/src/Assets/ezgif.com-gif-maker%20(3).gif" width="230px" height="500px" alt=""/>
+<img src="https://github.com/patika-128-react-native-bootcamp/week_6-namazclan/blob/master/src/Assets/ezgif.com-gif-maker%20(7).gif" width="230px" height="500px" alt=""/>
+<img src="https://github.com/patika-128-react-native-bootcamp/week_6-namazclan/blob/master/src/Assets/ezgif.com-gif-maker%20(8).gif" width="230px" height="500px" alt=""/>
 
 # Setup
 
